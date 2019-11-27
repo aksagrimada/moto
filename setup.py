@@ -30,8 +30,8 @@ def get_version():
 install_requires = [
     "Jinja2>=2.10.1",
     "boto>=2.36.0",
-    "boto3>=1.9.86",
-    "botocore>=1.12.86",
+    "boto3>=1.9.201",
+    "botocore>=1.12.201",
     "cryptography>=2.3.0",
     "requests>=2.5",
     "xmltodict",
@@ -39,7 +39,7 @@ install_requires = [
     "werkzeug",
     "PyYAML>=5.1",
     "pytz",
-    "python-dateutil<3.0.0,>=2.1",
+    "python-dateutil<2.8.1,>=2.1",
     "python-jose<4.0.0",
     "mock",
     "docker>=2.5.1",
@@ -94,4 +94,7 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Topic :: Software Development :: Testing",
     ],
+    project_urls={
+        "Documentation": "http://docs.getmoto.org/en/latest/",
+    },
 )
